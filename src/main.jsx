@@ -12,7 +12,7 @@ import Home from "./pages/Home";
 
 
 
-import './index.css'
+import './index.sass'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

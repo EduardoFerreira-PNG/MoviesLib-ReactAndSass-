@@ -1,4 +1,7 @@
-import { Link, Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom"
+import Navbar from "./components/Navbar"
+
+
 import "./styles/app.sass"
 
 function App() {
@@ -6,13 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <nav id="navbar">
-        <h2>
-          <Link to="/">MovieLib</Link>
-        </h2>
-        <Link to="/movie/1">MovieLib</Link>
-        <Link to="/search">MovieLib</Link>
-      </nav>
+      <Navbar />
       <h2>MoviesLib</h2>
       <Outlet />
       
